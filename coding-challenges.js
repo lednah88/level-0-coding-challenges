@@ -54,12 +54,12 @@ console.log(maximun(0,2,1))
 function celsiusToFereignheit(num) {
     return (num*9/5)+32 + ' F'
 }
-console.log(tempC2F(25))
+console.log(elsiusToFereignheit(25))
 
 function fereignheitToCelsius(num) {
     return (num-32)*5/9 + ' C'
 }
-console.log(tempF2C(98.6))
+console.log(fereignheitToCelsius(98.6))
 
 // Task 8
 function time(num) {
