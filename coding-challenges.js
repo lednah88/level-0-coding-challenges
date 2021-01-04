@@ -45,8 +45,14 @@ function areaOfATriangle(a, b, c) {
 console.log(areaOfATriangle(3, 4, 5));
 
 // Task 6
-function maximun(x, y, z) {
-  return Math.max(x, y, z);
+function maximun(...num) {
+  let max = 0;
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] > max) {
+      max = num[i];
+    }
+  }
+  return max;
 }
 console.log(maximun(0, 2, 1));
 
@@ -89,8 +95,16 @@ console.log(vowels("xongIleUa"));
 
 // Task 11
 function commonLetters(str1, str2) {
+  let nStr1 = str1.split("");
+  let nStr2 = str2.split("");
   let res = "";
-
+  for (let i = 0; i < nStr1.length; i++) {
+    for (let j = 0; j < nStr2.length; j++) {
+      if (nStr1[i] === nStr2[j]) {
+        res += nStr1[i];
+      }
+    }
+  }
   return res;
 }
 console.log(commonLetters("house", "computers"));
