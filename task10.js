@@ -1,4 +1,4 @@
 function vowels(str) {
-    return str.match(/[aeiou]/gi);
-  }
-  console.log(vowels("xongIleUa"));
+  return str.match(/[aeiou]/gi).toString();
+}
+console.log(vowels("xongIleUa"));
